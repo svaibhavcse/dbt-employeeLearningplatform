@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: learningPlatformSrc
+    database : EMPLOYEE_LEARNING_PLATFORM
+    schema : DataLoad
+    tables:
+    - name : users
+    - name: events
+    - name: registrations
+    - name : interests
