@@ -1,6 +1,6 @@
 {{
     config(
-        tags = ['mart']
+        tags = ['mart','completeData']
     )
 }}
 WITH users AS (
@@ -33,7 +33,9 @@ joined AS (
                e.PREREQUISITE,
                u.user_name,
                u.email,
-               u.role
+               u.role,
+               u.experience,
+               u.skill as User_skill
         FROM 
             events as e
         JOIN 

@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: mart_completeData
+    columns:
+      - name: REGISTRATION_ID
+        description: Unique identifier for each registration.
+        tests:
+          - unique
+          - not_null
+      - name: EVENT_ID
+        description: Unique identifier for each event.
+        tests:
+          - not_null
+      - name: USER_ID
+        description: Unique identifier for each user.
+        tests:
+          - not_null
+      - name: REGISTERED_AT
+        description: Timestamp of when the user registered for the event.
+        tests:
+          - not_null
+      - name: EVENT_NAME
+        description: Name of the event.
+        tests:
+          - not_null
+      - name: EVENT_DESCRIPTION
+        description: Description of the event.
+        tests:
+          - not_null
+      - name: START_DATE
+        description: Start date of the event.
+        tests:
+          - not_null
+      - name: END_DATE
+        description: End date of the event.
+        tests:
+          - not_null
+      - name: START_TIME
+        description: Start time of the event.
+        tests:
+          - not_null
+      - name: END_TIME
+        description: End time of the event.
+        tests:
+          - not_null
+      - name: LOCATION
+        description: Location of the event.
+        tests:
+          - not_null
+      - name: SKILL_SET
+        description: Skill set that is trained on the event.
+        tests:
+          - not_null
+      - name: TRAINER
+        description: Name of the trainer for the event.
+        tests:
+          - not_null
+      - name: STATUS
+        description: Status of the event.
+        tests:
+          - not_null
+      - name: AVAILABLE_SEATS
+        description: Number of available seats for the event.
+        tests:
+          - not_null
+      - name: RESOURCE
+        description: Resource link for the event.
+        tests:
+          - not_null
+      - name: PREREQUISITE
+        description: Prerequisite skills or knowledge required for the event.
+        tests:
+          - not_null
+      - name: USER_NAME
+        description: Name of the user registering for the event.
+        tests:
+          - not_null
+      - name: EMAIL
+        description: Email of the user registering for the event.
+        tests:
+          - not_null
+      - name: ROLE
+        description: Role of the user registering for the event.
+        tests:
+          - not_null
+      - name: EXPERIENCE
+        description: Experience level of the user registering for the event.
+        tests:
+          - not_null
+      - name: USER_SKILL
+        description: Skill set of the user registering for the event.
+        tests:
+          - not_null

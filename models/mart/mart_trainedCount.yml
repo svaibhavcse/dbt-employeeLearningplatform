@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: mart_trainedCount
+    columns:
+      - name: SKILL_SET
+        description: Skill set associated with the trained employees.
+        tests:
+          - not_null
+      - name: TRAINED_EMPLOYEES
+        description: Number of employees trained in the skill set.
+        tests:
+          - not_null

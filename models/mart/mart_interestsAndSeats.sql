@@ -34,4 +34,5 @@ interests_and_no_seats AS (
         e.trainer
 
 )
+
 select * from interests_and_no_seats

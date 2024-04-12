@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_trainersForDomain
+    columns:
+      - name: SKILL_SET
+        description: Skill set associated with the trainers.
+        tests:
+          - not_null
+      - name: TRAINERS
+        description: Names of trainers for the skill set.
+        tests:
+          - not_null
+      - name: COUNT
+        description: Number of trainers available for the skill set.
+        tests:
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_trainerPerformance
+    columns:
+      - name: TRAINER
+        description: Name of the trainer.
+        tests:
+          - not_null
+      - name: NUM_REGISTERED_USERS
+        description: Number of users registered with the trainer.
+        tests:
+          - not_null
+      - name: TRAINER_SKILL_SETS
+        description: Skill sets taught by the trainer.
+        tests:
+          - not_null

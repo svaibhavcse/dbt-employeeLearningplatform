@@ -11,7 +11,18 @@ events AS (
     SELECT * FROM {{ ref('stg_events')}}
 ),
 trainerPerformance AS (
-select e.trainer,count(distinct r.user_id),GROUP_CONCAT(DISTINCT e.skill_set ORDER BY e.skill_set) AS trainer_skill_sets from events e join registrations r on e.event_id = r.event_id group by e.trainer
+    SELECT
+        e.trainer,
+        COUNT(DISTINCT r.user_id) AS num_registered_users,
+        LISTAGG(DISTINCT e.skill_set, ',')  AS trainer_skill_sets
+    FROM
+        events e
+    JOIN
+        registrations r ON e.event_id = r.event_id
+    GROUP BY
+        e.trainer
+    ORDER BY 
+        num_registered_users DESC
 )
 
 SELECT * FROM trainerPerformance

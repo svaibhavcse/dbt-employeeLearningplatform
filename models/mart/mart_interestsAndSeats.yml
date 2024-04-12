@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_interestsAndSeats
+    columns:
+      - name: event_name
+        description: Name of the event.
+        tests:
+          - not_null
+      - name: SKILL_SET
+        description: Skill set associated with the event.
+        tests:
+          - not_null
+      - name: TRAINER
+        description: Name of the trainer for the event.
+        tests:
+          - not_null
+      - name: INTERESTED_USERS
+        description: Number of users interested in the event but have no seats.
+        tests:
+          - not_null

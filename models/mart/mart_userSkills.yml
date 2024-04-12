@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_userSkills
+    columns:
+      - name: USER_NAME
+        description: Name of the user.
+        tests:
+          - not_null
+      - name: SKILLS
+        description: List of skills associated with the user.
+        tests:
+          - not_null
+      - name: SKILL_COUNT
+        description: Number of skills possessed by the user.
+        tests:
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_mostInterests
+    columns:
+      - name: EVENT_NAME
+        description: Name of the event.
+        tests:
+          - not_null
+      - name: SKILL_SET
+        description: Skill set associated with the event.
+        tests:
+          - not_null
+      - name: INTERESTED_USERS
+        description: Number of users interested in the event.
+        tests:
+          - not_null

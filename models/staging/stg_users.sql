@@ -12,7 +12,9 @@
  renaming_and_convertion AS (
     SELECT
         userid AS USER_ID,
-        username as USER_NAME,
+        name as USER_NAME,
+        experience,
+        skill,
         email,
         role
     FROM
